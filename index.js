@@ -82,8 +82,8 @@ const generateId = () => {
     }
   
     const person = new Person({
-      content: body.content,
-      important: body.important || false,
+      name: body.content,
+      number: body.important || false,
     })
   
     person.save().then(savedPerson => {
