@@ -78,7 +78,7 @@ const generateId = () => {
     const body = request.body
   
     if (body.name === undefined) {
-      return response.status(400).json({ error: 'content missing' })
+      return response.status(400).json({ error: 'name missing' })
     }
   
     const person = new Person({
